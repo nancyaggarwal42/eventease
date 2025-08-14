@@ -8,7 +8,7 @@ const dummyJobs = Array.from({ length: 20 }, (_, i) => ({
   skills: ['Event Planning', 'Vendor Management'],
 }))
 
-export default function DummyJobList() {
+export default function JobsList() {
   return (
     <div className="space-y-4 mt-6">
       <h2 className="text-xl font-semibold text-white">📋 Event Management Jobs</h2>
@@ -21,4 +21,5 @@ export default function DummyJobList() {
       ))}
     </div>
   )
+
 }
