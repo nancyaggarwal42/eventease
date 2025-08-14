@@ -13,7 +13,7 @@
 // export default App;
 'use client';
 import React, { useState } from 'react';
-import DummyJobList from './Components/jobTaker/DummyJobList';
+import DummyJobList from './Components/jobTaker/JobsList';
 import JobSearchBar from './Components/jobTaker/JobSearchBar';
 import InstantJobs from './Components/jobTaker/InstantJobs';
 import AppliedAllJobs from './Components/jobTaker/AppliedJobs';
@@ -73,7 +73,7 @@ export default function App() {
       </nav>
 
       {/* Tab Content */}
-      {activeTab === 'Jobs' && <DummyJobList />}
+      {activeTab === 'Jobs' && <JobsList />}
       {activeTab === 'Search' && <JobSearchBar onSearch={q => alert(`Search: ${q}`)} />}
       {activeTab === 'Instant Jobs' && <InstantJobs />}
       {activeTab === 'Applied Jobs' && <AppliedJobs />}
@@ -81,3 +81,4 @@ export default function App() {
     </div>
   );
 }
+
